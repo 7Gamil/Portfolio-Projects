@@ -25,4 +25,4 @@ Install Required libraries
 `python Main.py`
 
 ## Demo video Example to show case
-![Video Example](/Resources/Demo1.mp4)
+![Video Example](Resources/Demo1.mp4)
