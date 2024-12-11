@@ -37,3 +37,5 @@ Install Required libraries
  <source src="./Resources/Demo1.mp4" type="video/mp4">
  </video>
 </figure>
+
+[![Watch the video](https://opencode.md/wp-content/uploads/2023/08/Top-8-facts-about-Linux-2.jpg)](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4)
