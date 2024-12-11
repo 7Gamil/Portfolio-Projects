@@ -25,7 +25,7 @@ Install Required libraries
 `python Main.py`
 
 ## Demo video Example to show case
-![Video Example]([Resources/Demo1.mp4](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4)
+![Video Example](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4)
 
 ## Demo Video Example to Showcase
 <video width="640" height="360" controls>
