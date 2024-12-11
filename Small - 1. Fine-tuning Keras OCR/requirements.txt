@@ -1,0 +1,8 @@
+silence_tensorflow
+tensorflow
+keras_ocr
+matplotlib
+imgaug
+numpy
+pandas
+sklearn
