@@ -3,8 +3,6 @@
 
 ## New Layers added
 <img src="Resources/New_Layers.png" title="New Layers" alt="New Layers" width="70%">
-<br/>
-
 ## Prerequisites
 Before using Jupyter notebook, ensure you have installed the required libraries <br/>
 `pip install -r requirments.txt`
