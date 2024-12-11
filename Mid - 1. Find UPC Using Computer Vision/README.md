@@ -1,4 +1,4 @@
-# Find UPC Using computer Vision `27/11/2024`
+# Find UPC Using computer Vision `15/11/2024`
 ## Brief
 Find UPC Using Computer Vision to make your life easier by automating the manual work for you.
 
