@@ -9,7 +9,6 @@
     |Project name|Description|Technologies|Date|
     |:--:|:--:|:--:|:--:|
     |[1. Find UPC Using Computer Vision](https://github.com/7Gamil/MyProjects/tree/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision)|Automating the process of finding UPC|tensorflow, keras, pandas, numpy, scipy, requests, and pyautogui|15/11/2024|
-    |[1. Find UPC Using Computer Vision]()|Automating the process of finding UPC|tensorflow, keras, pandas, numpy, scipy, requests, and pyautogui|15/11/2024|
 
 3. Small Projects
     |Project name|Description|Technologies|Date|
