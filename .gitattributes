@@ -1,3 +1,4 @@
 # GitHub detects Jupyter notebooks as 99% of my files, even though I also use Python files.
 # This might be because Jupyter notebooks are larger in size.
 *.ipynb -linguist-detectable
+*/*.ipynb -linguist-detectable
