@@ -27,8 +27,10 @@ Used the [Indian Liver Patient Imbalanced Dataset](https://archive.ics.uci.edu/d
 - subsample = `0.7, 0.8, 0.9`
 - depth = `3, 4, 5, ..., 30, 31`
 
-Please check `Handle Imbalanced Dataset.ipynb` Jupyter file for more details.
+
 
 ## Prerequisites
 Before using Jupyter notebook, ensure you have installed the required libraries <br/>
 `pip install -r requirments.txt`
+
+## Please check `Handle Imbalanced Dataset.ipynb` Jupyter file for more details.
