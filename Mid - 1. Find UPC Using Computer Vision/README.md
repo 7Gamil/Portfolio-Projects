@@ -24,7 +24,7 @@ Install Required libraries
 ## How to use
 `python Main.py`
 
-## Demo video Example to show case
+## Demo video
 https://github.com/user-attachments/assets/4111857a-446b-4635-91e2-326eef1cb603
 
 
