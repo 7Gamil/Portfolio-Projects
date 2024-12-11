@@ -25,7 +25,7 @@ Install Required libraries
 `python Main.py`
 
 ## Demo video Example to show case
-![Video Example](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4)
+[Video Example](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4)
 
 ## Demo Video Example to Showcase
 <video width="640" height="360" controls>
@@ -39,3 +39,7 @@ Install Required libraries
 </figure>
 
 [![Watch the video](https://opencode.md/wp-content/uploads/2023/08/Top-8-facts-about-Linux-2.jpg)](https://raw.githubusercontent.com/7Gamil/MyProjects/refs/heads/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision/Resources/Demo1.mp4?token=GHSAT0AAAAAACVXPPY5UYEBCCYTE2KST5T6Z2ZTHOA)
+
+<video src="Resources/Demo1.mp4" controls title="Title"></video>  
+
+<video src="resource/demo1.mp4" controls title="Demo Video"></video>  
