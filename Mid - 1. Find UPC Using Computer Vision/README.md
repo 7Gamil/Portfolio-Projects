@@ -29,5 +29,5 @@ Install Required libraries
 
 ## Demo Video Example to Showcase
 <video width="640" height="360" controls>
-  <source src="/Resources/Demo1.mp4" type="video/mp4">
+  <source src="Resources/Demo1.mp4" type="video/mp4">
 </video>
