@@ -14,4 +14,5 @@
     |Project name|Description|Technologies|Date|
     |:--:|:--:|:--:|:--:|
     |[1. Fine-tuning Keras OCR](https://github.com/7Gamil/MyProjects/tree/main/Small%20-%201.%20Fine-tuning%20Keras%20OCR)|Add custom layers, Adjust Hyperparameters, and Froze some Layers to increase the model accuracy|keras_ocr, tensorflow, sklearn,, matplotlib, imgaug, numpy, pandas|26/11/2024|
-    |[2. Handle imbalanced dataset](https://github.com/7Gamil/MyProjects/tree/main/Small%20-%202.%20Handle%20Imbalanced%20Dataset)|Handle imbalanced dataset and using GridSearchCV and k-Fold for model validation|numpy, pandas, sklearn, imblearn, xgboost, seaborn, and matplotlib|8/12/2024|
+    |[2. Handle imbalanced dataset](https://github.com/7Gamil/MyProjects/tree/main/Small%20-%202.%20Handle%20Imbalanced%20Dataset)|Handle imbalanced dataset and using GridSearchCV and k-Fold for model validation|numpy, pandas, sklearn, imblearn, xgboost, seaborn, and matplotlib|08/12/2024|
+    |[3. Teeth Classification]()|Teeth Classification using CNN|numpy, pandas, tensorflow, sklearn, seaborn, and matplotlib|06/02/2025|

@@ -19,10 +19,14 @@ Find UPC Using Computer Vision to make your life easier by automating the manual
 
 ## Prerequisites
 Install Required libraries
-`pip install -r requirments.txt`
+```bach
+pip install -r requirments.txt
+```
 
 ## How to use
-`python Main.py`
+```bach
+python Main.py
+```
 
 ## Demo video
 https://github.com/user-attachments/assets/4111857a-446b-4635-91e2-326eef1cb603

@@ -31,6 +31,8 @@ Used the [Indian Liver Patient Imbalanced Dataset](https://archive.ics.uci.edu/d
 
 ## Prerequisites
 Before using Jupyter notebook, ensure you have installed the required libraries <br/>
-`pip install -r requirments.txt`
+```bach
+pip install -r requirments.txt
+```
 
 ## Please check `Handle Imbalanced Dataset.ipynb` Jupyter file for more details.

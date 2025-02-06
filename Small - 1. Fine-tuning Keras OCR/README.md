@@ -5,6 +5,8 @@
 <img src="Resources/New_Layers.png" title="New Layers" alt="New Layers" width="70%">
 ## Prerequisites
 Before using Jupyter notebook, ensure you have installed the required libraries <br/>
-`pip install -r requirments.txt`
+```bach
+pip install -r requirments.txt
+```
 
-Please check `fine-tuning.ipynb` Jupyter file for more details.
+## Please check `fine-tuning.ipynb` Jupyter file for more details.
