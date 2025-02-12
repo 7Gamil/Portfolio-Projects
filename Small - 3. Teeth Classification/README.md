@@ -22,6 +22,9 @@ sudo apt-get install graphviz
 The dataset can be found in the `Teeth Dataset.zip` file
 
 ## Pertained model file
-The pre-trained model file `Dataset.zip`.
+The pre-trained model file `cnn_teeths.keras`.
 
 ## Please check `Teeth Classification CNN.ipynb` Jupyter file for more details.
+
+## Fine-tuned model
+The Fine-tuned model file `fine_tuned_cnn_teeths.keras`.
