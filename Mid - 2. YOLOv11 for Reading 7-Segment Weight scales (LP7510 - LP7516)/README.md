@@ -6,6 +6,12 @@ Trained YOLOv11s on 30k grayscale images to read 7-Segment displays on weight sc
 <img src="Data/result/result_image_LP7510.png" width="70%">
 
 ### showcase video
+The full video here: `Data/result/result_video_LP7510.mp4`
+
+https://github.com/user-attachments/assets/1b8fb2fd-617e-4ff1-b674-5afdb98aa3a7
+
+
+
 
 ## Training or Inference with the model in Grayscale.
 To train or perform inference with the model in grayscale, you need to modify your Ultralytics library.
