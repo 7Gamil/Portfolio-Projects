@@ -9,6 +9,8 @@
     |Project name|Description|Technologies|Date|
     |:--:|:--:|:--:|:--:|
     |[1. Find UPC Using Computer Vision](https://github.com/7Gamil/MyProjects/tree/main/Mid%20-%201.%20Find%20UPC%20Using%20Computer%20Vision)|Automating the process of finding UPC|tensorflow, keras, pandas, numpy, scipy, requests, and pyautogui|15/11/2024|
+    |[2. YOLOv11 for Reading 7-Segment Weight scales (LP7510 - LP7516)]()|Trained YOLOv11s on 30k grayscale images to read 7-Segment displays on weight scales.|PyTorch, ultralytics, opencv, robowflow|21/01/2025|
+    |[3. YOLOv11 ROI and Tesseract OCR for Reading 7-Segment Weight Scales (LP7510 - LP7516)]()|Trained YOLOv11n on 30k grayscale images to detect regions of interest (ROIs) containing 7-Segment displays on weight scales. then used the pretrained Tesseract OCR model to recognize 7-Segment numbers in the detected ROIs.|PyTorch, ultralytics, pytesseract, opencv, robowflow|25/01/2025|
 
 3. Small Projects
     |Project name|Description|Technologies|Date|
