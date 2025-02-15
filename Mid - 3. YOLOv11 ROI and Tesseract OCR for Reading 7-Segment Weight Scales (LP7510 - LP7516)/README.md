@@ -6,6 +6,11 @@ Trained YOLOv11n on 30k grayscale images to detect regions of interest (ROIs) co
 <img src="Data/result/result_image_ROI_LP7510.png" width="70%">
 
 ### showcase video
+You can watch the full video here: `Data/result/result_video_ROI_LP7510.mp4`
+
+https://github.com/user-attachments/assets/05ceca34-0c9e-4926-9a13-bd352b9f6bc7
+
+
 
 ## Training or Inference with the model in Grayscale.
 To train or perform inference with the model in grayscale, you need to modify your Ultralytics library.
