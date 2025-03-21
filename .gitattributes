@@ -3,5 +3,5 @@
 # Ignore Jupyter notebooks
 *.ipynb -linguist-detectable
 */*.ipynb -linguist-detectable
-/Mid[[:space:]]-[[:space:]]2.[[:space:]]YOLOv11[[:space:]]for[[:space:]]Reading[[:space:]]7-Segment[[:space:]]Weight[[:space:]]scales[[:space:]](LP7510[[:space:]]-[[:space:]]LP7516)/Data/train/30k[[:space:]]LP7510[[:space:]]images[[:space:]]in[[:space:]]YOLOv11[[:space:]]format.zip filter=lfs diff=lfs merge=lfs -text
-/Mid[[:space:]]-[[:space:]]3.[[:space:]]YOLOv11[[:space:]]ROI[[:space:]]and[[:space:]]Tesseract[[:space:]]OCR[[:space:]]for[[:space:]]Reading[[:space:]]7-Segment[[:space:]]Weight[[:space:]]Scales[[:space:]](LP7510[[:space:]]-[[:space:]]LP7516)/Data/train/30k[[:space:]]LP7510[[:space:]]ROI[[:space:]]images[[:space:]]in[[:space:]]YOLOv11[[:space:]]format.zip filter=lfs diff=lfs merge=lfs -text
+# /Mid[[:space:]]-[[:space:]]2.[[:space:]]YOLOv11[[:space:]]for[[:space:]]Reading[[:space:]]7-Segment[[:space:]]Weight[[:space:]]scales[[:space:]](LP7510[[:space:]]-[[:space:]]LP7516)/Data/train/30k[[:space:]]LP7510[[:space:]]images[[:space:]]in[[:space:]]YOLOv11[[:space:]]format.zip filter=lfs diff=lfs merge=lfs -text
+# /Mid[[:space:]]-[[:space:]]3.[[:space:]]YOLOv11[[:space:]]ROI[[:space:]]and[[:space:]]Tesseract[[:space:]]OCR[[:space:]]for[[:space:]]Reading[[:space:]]7-Segment[[:space:]]Weight[[:space:]]Scales[[:space:]](LP7510[[:space:]]-[[:space:]]LP7516)/Data/train/30k[[:space:]]LP7510[[:space:]]ROI[[:space:]]images[[:space:]]in[[:space:]]YOLOv11[[:space:]]format.zip filter=lfs diff=lfs merge=lfs -text
