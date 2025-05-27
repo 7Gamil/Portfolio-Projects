@@ -5,12 +5,7 @@ https://github.com/user-attachments/assets/498fd215-b36b-4249-be48-46ce4571cb51
 Utilizes crawl4ai for web crawling and an LLM (Gemini Flash) for extracting Airbnb room data based on a defined schema. The extracted data includes listing titles, prices, ratings, reviews, descriptions, capacities, room details, addresses, images, and amenities.
 
 ## Setup
-
-1.  **Clone the repository (if you haven't already):**
-    ```bash
-    git clone repository_url / downlaod it as zip file
-    ```
-2.  **Install dependencies:**
+**Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
@@ -42,7 +37,7 @@ Once you have populated `config.py` with listing IDs, you can run the main scrap
     ```
 *   **Rate Limit Awareness:** Please be aware that the scraper is configured to pause for 90 seconds between requests to avoid hitting Airbnb's rate limits. You can modify this delay in the `main.py` file if needed, but be cautious not to set it too low to prevent your IP from being blocked.
 
-The scraped data will be saved in `json/` and `raw/` directories, and a summary CSV file (`csv_main.csv`) will be generated. Images will be downloaded to the `images/` directory.
+* The scraped data will be saved in `json/` and `raw/` directories, and a summary CSV file (`csv_main.csv`) will be generated. Images will be downloaded to the `images/` directory.
 ---
 
 ## ⚠️ Important Disclaimer for Educational Purposes: ⚠️
