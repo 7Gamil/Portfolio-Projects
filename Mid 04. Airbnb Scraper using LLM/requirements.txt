@@ -1,0 +1,12 @@
+# Used python 3.12
+python-dotenv
+Crawl4AI==0.6.3
+pydantic==2.10.6
+pydantic_core==2.27.2
+typing_extensions==4.12.2
+playwright==1.51.0
+aiohttp==3.11.14
+jsonschema==4.23.0
+referencing==0.36.2
+jsonschema-specifications==2024.10.1
+rpds-py==0.23.1
