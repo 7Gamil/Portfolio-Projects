@@ -3,7 +3,7 @@
 1. Huge Projects
     |Project name|Description|Technologies|Date|
     |:--:|:--:|:--:|:--:|
-    |--|--|--|--|
+    |01. AI Stock Forecast & Investment Advisor(https://github.com/Islam29632/WSP_Grad_Project/tree/main)|This full-stack AI system forecasts stock prices by analyzing real-world and historical stock data. It uses the Gemini LLM to generate professional investment recommendations, accessible via a Streamlit web app, where users can also download analysis reports.|crewai, google-generativeai, pandas, streamlit, plotly, fastapi, uvicorn, hashlib, sqlite3, python-jose, passlib, fpdf2, matplotlib, requests, sqlalchemy, optuna, keras, tensorflow, scikit-learn, langchain-community, langchain, yfinance, sentence-transformers, duckdb, kaggle|21/05/2025|
 
 2. Mid Projects
     |Project name|Description|Technologies|Date|
