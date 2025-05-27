@@ -1,3 +1,6 @@
+# Demo video
+https://github.com/user-attachments/assets/498fd215-b36b-4249-be48-46ce4571cb51
+
 # Airbnb Scraper
 Utilizes crawl4ai for web crawling and an LLM (Gemini Flash) for extracting Airbnb room data based on a defined schema. The extracted data includes listing titles, prices, ratings, reviews, descriptions, capacities, room details, addresses, images, and amenities.
 
