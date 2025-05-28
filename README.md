@@ -1,4 +1,6 @@
-# My Projects Created by [Me](https://github.com/7Gamil/)
+## All projects are created by [me](https://github.com/7Gamil/) for learning and skill development. I used AI and Google for guidance but didn’t copy or fork any code.
+
+## Here is my [cv]()
 
 1. Huge Projects
     |Project name|Description|Technologies|Date|
