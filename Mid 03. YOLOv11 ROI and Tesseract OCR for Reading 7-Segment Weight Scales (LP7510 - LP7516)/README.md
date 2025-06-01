@@ -35,9 +35,8 @@ YOLOv11n model can be found in folder `Models/YOLOv11/`.
 Tesseract OCR model can be found in folder `Models/tesseract/7seg.traineddata` by [Shreeshrii](https://github.com/Shreeshrii) in repository [tessdata ssd](https://github.com/Shreeshrii/tessdata_ssd/tree/master) copy Tesseract OCR model to Tesseract models path on Ubuntu is `\usr\share\tesseract-ocr\5\tessdata\`.
 
 ## Training Data 30k LP7510 images ROI (1.5 GB size)
-`Data/train/30k LP7510 ROI images in YOLOv11 format.zip` file.
-
-Roboflow: [7Gmail LP7510 ROI](https://app.roboflow.com/7gamil/lp7510-numbers-roi-ocr-gia7i/4).
+<!-- `Data/train/30k LP7510 ROI images in YOLOv11 format.zip` file. -->
+Available for download and use on Roboflow: [7Gmail LP7510 ROI](https://app.roboflow.com/7gamil/lp7510-numbers-roi-ocr-gia7i/4).
 
 ## How to use
 See the examples in the `code.ipynb` file for:
