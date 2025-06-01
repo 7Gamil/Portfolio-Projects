@@ -34,9 +34,8 @@ pip install -r requirments.txt
 in folder `Model`.
 
 ## Training Data 30k LP7510 images (1.5 GB size)
-`Data/train/30k LP7510 images in YOLOv11 format.zip` file.
-
-Roboflow: [7Gmail LP7510](https://app.roboflow.com/7gamil/lp7510-numbers-ocr-fc1cv/1).
+<!-- `Data/train/30k LP7510 images in YOLOv11 format.zip` file. -->
+Available for download and use on Roboflow: [7Gmail LP7510](https://app.roboflow.com/7gamil/lp7510-numbers-ocr-fc1cv/1).
 
 ## How to use
 See the examples in the `code.ipynb` file for:
