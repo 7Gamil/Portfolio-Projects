@@ -7,9 +7,9 @@ Utilizes crawl4ai for web crawling and an LLM (Gemini Flash) for extracting Airb
 ## Setup
 **Install dependencies:**
 
-    ```bash
-    pip install -r requirements.txt
-    ```
+```bash
+pip install -r requirements.txt
+```
 
 ## How to Use This Project
 
