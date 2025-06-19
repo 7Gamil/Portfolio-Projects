@@ -15,7 +15,11 @@ pip install -r requirements.txt
 
 Follow these steps to use the Airbnb scraper:
 
-### 1. Extract Listing IDs from an Airbnb Search Page
+### 1. Set Up Gemini API Key
+* Add your Gemini API key to the `.env` file. You can get it from [Google AI Studio](https://aistudio.google.com/app/prompts) (free) or [Google Vertex AI](https://cloud.google.com/vertex-ai) (paid).
+* Note: This project uses the `gemini-2.0-flash` model by default. You can change the model in the `utils/scraper_utils.py` file.
+
+### 2. Extract Listing IDs from an Airbnb Search Page
 
 To get the IDs of Airbnb listings you want to scrape, you first need to extract them from an Airbnb search results page.
 
@@ -28,7 +32,7 @@ To get the IDs of Airbnb listings you want to scrape, you first need to extract 
     This script will crawl the search page and print a list of extracted Airbnb listing IDs to your console.
 *   **Copy IDs to `config.py`:** Copy the extracted listing IDs from the console output. Open [`config.py`](config.py) and paste these IDs into the `URL_list` dictionary under the appropriate key (e.g., `"Dahab"`).
 
-### 2. Run the Main Scraper
+### 3. Run the Main Scraper
 
 Once you have populated `config.py` with listing IDs, you can run the main scraper to fetch detailed information for each listing.
 
