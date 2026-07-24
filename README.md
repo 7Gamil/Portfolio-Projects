@@ -14,11 +14,11 @@
 2. Mid Projects
     |Project name|Description|Technologies|Date|
     |:--:|:--:|:--:|:--:|
-    |[01. Find UPC Using Computer Vision](Mid%2001.%20Find%20UPC%20Using%20Computer%20Vision)|Automating the process of finding UPC|tensorflow, keras, pandas, numpy, scipy, requests, and pyautogui|15/11/2024|
+    |[01. Find UPC Using Computer Vision](Mid%2001.%20Find%20UPC%20Using%20Computer%20Vision)|Automating the process of finding UPC.|tensorflow, keras, pandas, numpy, scipy, requests, and pyautogui|15/11/2024|
     |[02. YOLOv11 for Reading 7-Segment Weight scales (LP7510 - LP7516)](Mid%2002.%20YOLOv11%20for%20Reading%207-Segment%20Weight%20scales%20(LP7510%20-%20LP7516))|Trained YOLOv11s on 30k grayscale images to read 7-Segment displays on weight scales.|pytorch, ultralytics, opencv, robowflow|21/01/2025|
     |[03. YOLOv11 ROI and Tesseract OCR for Reading 7-Segment Weight Scales (LP7510 - LP7516)](Mid%2003.%20YOLOv11%20ROI%20and%20Tesseract%20OCR%20for%20Reading%207-Segment%20Weight%20Scales%20(LP7510%20-%20LP7516))|Trained YOLOv11n on 30k grayscale images to detect regions of interest (ROIs) containing 7-Segment displays on weight scales. then used the pretrained Tesseract OCR model to recognize 7-Segment numbers in the detected ROIs.|PyTorch, ultralytics, pytesseract, opencv, robowflow|25/01/2025|
     |[04. Airbnb Scraper using LLM](Mid%2004.%20Airbnb%20Scraper%20using%20LLM)|Utilizes crawl4ai for web crawling and an LLM (Gemini Flash) for extracting Airbnb room data based on a defined schema. The extracted data includes listing titles, prices, ratings, reviews, descriptions, capacities, room details, addresses, images, and amenities.|crawl4ai, pydantic, gemini Flash|27/05/2025|
-    |[05. Agent Attack Using Qwen3.6 27B Uncensored](Mid%2005.%20Agent%20Attack%20Using%20Qwen3.6-27B)|Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated simulated attack on a website's server|llm studio, pi agent, qwen3.6 27B, aws, nmap, hydra, sshpass|23/06/2026|
+    |[05. Agent Attack Using Qwen3.6 27B Uncensored](Mid%2005.%20Agent%20Attack%20Using%20Qwen3.6%2027B%20Uncensored)|Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated simulated attack on a website's server.|llm studio, pi agent, qwen3.6 27B, aws, nmap, hydra, sshpass|23/06/2026|
 
 <hr/>
 
