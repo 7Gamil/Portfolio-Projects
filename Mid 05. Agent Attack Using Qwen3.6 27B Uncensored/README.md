@@ -18,6 +18,7 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Linux (Debian / Ubuntu)
     * nmap, hydra, sshpass: `sudo apt install nmap hydra sshpass -y`
     * pi agent: `curl -fsSL https://pi.dev/install.sh | sh`
+
 * Windows
     * [nmap](https://nmap.org/download.html#windows)
     * [hydra prebuild - 3rd party source](https://github.com/maaaaz/thc-hydra-windows/releases) or [Build hydra from source](https://github.com/vanhauser-thc/thc-hydra/releases)
@@ -30,12 +31,13 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Deploy the qwen locally on the attacker vm.
 * Linux (Debian / Ubuntu)
     * LM Studio: `curl -OL https://lmstudio.ai/download/latest/linux/x64?format=AppImage`
-    * change permissions and run LM Studio `sudo chmod u+x ./x64 && ./x64`
-    * Open LM Studio and Download [HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive IQ4_XS](https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive) (15.1 GB) 
+    * Change permissions and run LM Studio `sudo chmod u+x ./x64 && ./x64`
+    * Open LM Studio and Download [HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive](https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive) IQ4_XS (15.1 GB) 
     * [Steps to Add LM Studio API to pi agent](https://patloeber.com/gemma-4-pi-agent/)
-    * in download step and edit json file step (~/.pi/agent/models.json) change model id to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
+    * In the download step and the json file step (~/.pi/agent/models.json), change model ID to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
+
 * Windows
-    * [LM Studio](https://lmstudio.ai/download/latest/win32/x64)
+    * Download [LM Studio](https://lmstudio.ai/download/latest/win32/x64)
     * [Steps to Add LM Studio API to pi agent](https://patloeber.com/gemma-4-pi-agent/)
     * In the download step and the json file step (~/.pi/agent/models.json), change model ID to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
 
@@ -45,12 +47,14 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Linux spot price
     * g6.xlarge specs: 4 vCPU - 16GB ram - L4 - 24GB vram - ~$0.37/h
     * <img src="resources/linux-g6.xlarge-spot-price-ohio.jpg" width="70%">
+
     * g6e.xlarge specs: 4 vCPU - 32GB ram - L40S - 48GB vram - $0.67/h - ~30 t/s Qwen 3.6 27B
     * <img src="resources/linux-g6e.xlarge-spot-price-ohio.jpg" width="70%">
 
 * Windows spot price
     * g6.xlarge specs: 4 vCPU - 16GB ram - L4 - 24GB vram - $0.26/h 
     * <img src="resources/win-g6.xlarge-spot-price-ohio.jpg" width="70%">
+
     * g6e.xlarge specs: 4 vCPU - 32GB ram - L40S - 48GB vram - $0.37/h - ~30 t/s Qwen 3.6 27B (Used in the demo)
     * <img src="resources/win-g6e.xlarge-spot-price-ohio.jpg" width="70%">
 
@@ -58,20 +62,20 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 
 * Start attack
 * Linux (Debian / Ubuntu)
-    * `curl -OL url-repo-/attack-files.zip`
+    * `curl -OL https://github.com/7Gamil/Portfolio-Projects/raw/refs/heads/main/Mid%2005.%20Agent%20Attack%20Using%20Qwen3.6%2027B%20Uncensored/attack/attack-files.zip`
     * `unzip attack-files.zip`
     * run pi agent in attack-files folder: `cd attack-files && pi`
     * Type this [prompt](attack/goal-prompt.txt) to pi agent 
 
 * Windows
     * install pi agent plugin to work with powershell: `pi install npm:@gogomi/pi-windows-shell`
-    * `curl -OL url-repo-/attack-files.zip`
+    * `curl -OL https://github.com/7Gamil/Portfolio-Projects/raw/refs/heads/main/Mid%2005.%20Agent%20Attack%20Using%20Qwen3.6%2027B%20Uncensored/attack/attack-files.zip`
     * `Expand-Archive -Path .\attack-files.zip` 
     * run pi agent with disabled linux tools in attack-files folder: `cd attack-files && pi --no-builtin-tools`
     * Type this [prompt](attack/goal-prompt.txt) to pi agent
 
 ## 2. Victim vm (Linux only)
-* curl -OL url-repo-/nginx.zip
+* `curl -OL https://github.com/7Gamil/Portfolio-Projects/raw/refs/heads/main/Mid%2005.%20Agent%20Attack%20Using%20Qwen3.6%2027B%20Uncensored/victim/nginx/nginx.zip`
 * unzip nginx.zip
 * Host the index.html using python in nginx folder `cd nginx && sudo python3 -m http.server 80`
     * Create non-root user `ec2-user`: `sudo useradd -m -s /bin/bash ec2-user`
@@ -112,8 +116,8 @@ sudo systemctl restart ssh
 
 ---
 
-## agent-cli-full-output
-Check file `attack/agent-cli-full-output.pdf`
+## pi agent cli full output
+Check the pdf `[pi-agent-cli-full-output.pdf](attack/pi-agent-cli-full-output.pdf)`
 
 ## Other uncensored LLMs you may try depend on your use case / hardware.
 * https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
