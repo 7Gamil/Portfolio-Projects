@@ -132,6 +132,8 @@ Check the pdf [pi-agent-cli-full-output.pdf](attack/pi-agent-cli-full-output.pdf
 * https://huggingface.co/mradermacher/gemma-4-12B-it-abliterated-uncensored-GGUF
 * https://huggingface.co/HauhauCS/Qwen3.5-9B-Uncensored-HauhauCS-Aggressive
 
+---
+
 ## ⚠️ Important Disclaimer ⚠️
 
 This demo is for educational, research, and authorized security testing purposes only. Use only on systems you own or have explicit permission to test. Any unauthorized automated testing or attacks are illegal and the user assumes all responsibility for their actions.
