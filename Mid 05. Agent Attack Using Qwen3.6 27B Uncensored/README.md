@@ -13,6 +13,8 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Result
 * <img src="resources/result.jpg" width="50%">
 
+---
+
 ## 1. Attacker VM (Linux / Windows with a GPU that has at least 24 GB vram)
 * Install the required tools (nmap, hydra, sshpass, pi agent)
 * Linux (Debian / Ubuntu)
@@ -43,19 +45,19 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 
 ---
 
-* EC2 e.g. g6.xlarge, g6e.xlarge (us-east-2 Ohio)
+* EC2 e.g. `g6.xlarge`, `g6e.xlarge` `us-east-2 (Ohio)`
 * Linux spot price
-    * g6.xlarge specs: 4 vCPU - 16GB ram - L4 - 24GB vram - ~$0.37/h
+    * `g6.xlarge` specs: `4 vCPU - 16GB ram - L4 - 24GB vram - ~$0.37/h`
     * <img src="resources/linux-g6.xlarge-spot-price-ohio.jpg" width="70%">
 
-    * g6e.xlarge specs: 4 vCPU - 32GB ram - L40S - 48GB vram - $0.67/h - ~30 t/s Qwen 3.6 27B
+    * `g6e.xlarge` specs: `4 vCPU - 32GB ram - L40S - 48GB vram - $0.67/h - ~30 t/s Qwen 3.6 27B`
     * <img src="resources/linux-g6e.xlarge-spot-price-ohio.jpg" width="70%">
 
 * Windows spot price
-    * g6.xlarge specs: 4 vCPU - 16GB ram - L4 - 24GB vram - $0.26/h 
+    * `g6.xlarge` specs: `4 vCPU - 16GB ram - L4 - 24GB vram - $0.26/h`
     * <img src="resources/win-g6.xlarge-spot-price-ohio.jpg" width="70%">
 
-    * g6e.xlarge specs: 4 vCPU - 32GB ram - L40S - 48GB vram - $0.37/h - ~30 t/s Qwen 3.6 27B (Used in the demo)
+    * `g6e.xlarge` specs: `4 vCPU - 32GB ram - L40S - 48GB vram - $0.37/h - ~30 t/s Qwen 3.6 27B` (Used in the demo)
     * <img src="resources/win-g6e.xlarge-spot-price-ohio.jpg" width="70%">
 
 ---
@@ -79,7 +81,7 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * unzip nginx.zip
 * Host the index.html using python in nginx folder `cd nginx && sudo python3 -m http.server 80`
     * Create non-root user `ec2-user`: `sudo useradd -m -s /bin/bash ec2-user`
-    * Run `sudo passwd ec2-user` and enter any password form `attack/attack-files/password_wordlist.txt` e.g. `7mDm1XLWXkkPVxYgPe`
+    * Run `sudo passwd ec2-user` and enter any password form `[password_wordlist.txt](attack/attack-files/password_wordlist.txt)` e.g. `7mDm1XLWXkkPVxYgPe`
 
 ---
 
@@ -100,24 +102,24 @@ sudo systemctl restart ssh
 
 ---
 
-* Use old linux kernel from 1/2017-5/2026 to ensure the [dirtyfrag exploit](https://github.com/v4bel/dirtyfrag) works
+* Use old linux kernel from `1/2017-5/2026` to ensure the [dirtyfrag exploit](https://github.com/v4bel/dirtyfrag) works
     * e.g. Ubuntu Pro by AWS (Used in the demo)
     * <img src="resources/old-linux-kernel-ubuntu.jpg" width="70%">
 
 ---
 
-* EC2 e.g. c7a.medium, c6a.large us-east-1 (N. Virginia)
+* EC2 e.g. `c7a.medium`, `c6a.large` `us-east-1 (N. Virginia)`
 * Linux spot price
-    * c7a.medium specs: 1 vCPU - 2GB ram - ~$0.01/h
+    * `c7a.medium` specs: `1 vCPU - 2GB ram - ~$0.01/h`
     * <img src="resources/linux-c7a.medium-spot-price.jpg" width="70%">
 
-    * c6a.large specs: 2 vCPU - 4GB ram - ~$0.03/h (Used in the demo)
+    * `c6a.large` specs: `2 vCPU - 4GB ram - ~$0.03/h` (Used in the demo)
     * <img src="resources/linux-c6a.large-spot-price.jpg" width="70%">
 
 ---
 
 ## pi agent cli full output
-Check the pdf `[pi-agent-cli-full-output.pdf](attack/pi-agent-cli-full-output.pdf)`
+Check the pdf [pi-agent-cli-full-output.pdf](attack/pi-agent-cli-full-output.pdf)
 
 ## Other uncensored LLMs you may try depend on your use case / hardware.
 * https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
