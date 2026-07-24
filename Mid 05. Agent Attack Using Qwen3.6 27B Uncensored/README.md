@@ -34,12 +34,15 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Linux (Debian / Ubuntu)
     * LM Studio: `curl -OL https://lmstudio.ai/download/latest/linux/x64?format=AppImage`
     * Change permissions and run LM Studio `sudo chmod u+x ./x64 && ./x64`
-    * Open LM Studio and Download [HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive](https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive) IQ4_XS (15.1 GB) 
+    * Open LM Studio and Download [HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive](https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive) IQ4_XS (15.1 GB)
+    * Load `qwen3.6-27b-uncensored-hauhaucs-aggressive` with large context window e.g. `128k context length`
     * [Steps to Add LM Studio API to pi agent](https://patloeber.com/gemma-4-pi-agent/)
     * In the download step and the json file step (~/.pi/agent/models.json), change model ID to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
 
 * Windows
     * Download [LM Studio](https://lmstudio.ai/download/latest/win32/x64)
+    * Open LM Studio and Download [HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive](https://huggingface.co/HauhauCS/Qwen3.6-27B-Uncensored-HauhauCS-Aggressive) IQ4_XS (15.1 GB) 
+    * Load `qwen3.6-27b-uncensored-hauhaucs-aggressive` with large context window e.g. `128k context length`
     * [Steps to Add LM Studio API to pi agent](https://patloeber.com/gemma-4-pi-agent/)
     * In the download step and the json file step (~/.pi/agent/models.json), change model ID to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
 
@@ -81,7 +84,7 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * unzip nginx.zip
 * Host the index.html using python in nginx folder `cd nginx && sudo python3 -m http.server 80`
     * Create non-root user `ec2-user`: `sudo useradd -m -s /bin/bash ec2-user`
-    * Run `sudo passwd ec2-user` and enter any password form `[password_wordlist.txt](attack/attack-files/password_wordlist.txt)` e.g. `7mDm1XLWXkkPVxYgPe`
+    * Run `sudo passwd ec2-user` and enter any password form [password_wordlist.txt](attack/attack-files/password_wordlist.txt) e.g. `7mDm1XLWXkkPVxYgPe`
 
 ---
 
@@ -120,6 +123,8 @@ sudo systemctl restart ssh
 
 ## pi agent cli full output
 Check the pdf [pi-agent-cli-full-output.pdf](attack/pi-agent-cli-full-output.pdf)
+
+---
 
 ## Other uncensored LLMs you may try depend on your use case / hardware.
 * https://huggingface.co/HauhauCS/Qwen3.6-35B-A3B-Uncensored-HauhauCS-Aggressive
