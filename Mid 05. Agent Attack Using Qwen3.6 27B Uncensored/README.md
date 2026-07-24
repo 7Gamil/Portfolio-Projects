@@ -11,9 +11,9 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
 * Create two VMs one for attacker and the other for victim.
 * Attacker VM (LLM + agent + tools) → Victim VM (SSH + HTTP).
 * Result
-* <img src="resources/result.jpg" width="70%">
+* <img src="resources/result.jpg" width="50%">
 
-### 1. Attacker VM (Linux / Windows with a GPU that has at least 24 GB vram)
+## 1. Attacker VM (Linux / Windows with a GPU that has at least 24 GB vram)
 * Install the required tools (nmap, hydra, sshpass, pi agent)
 * Linux (Debian / Ubuntu)
     * nmap, hydra, sshpass: `sudo apt install nmap hydra sshpass -y`
@@ -25,7 +25,7 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
     * Add binary folders of the above tools to Windows PATH environment variable
     * pi agent: `powershell -c "irm https://pi.dev/install.ps1 | iex"`
 
-<br/>
+---
 
 * Deploy the qwen locally on the attacker vm.
 * Linux (Debian / Ubuntu)
@@ -39,7 +39,7 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
     * [Steps to Add LM Studio API to pi agent](https://patloeber.com/gemma-4-pi-agent/)
     * In the download step and the json file step (~/.pi/agent/models.json), change model ID to `qwen3.6-27b-uncensored-hauhaucs-aggressive`
 
-<br/>
+---
 
 * EC2 e.g. g6.xlarge, g6e.xlarge (us-east-2 Ohio)
 * Linux spot price
@@ -53,6 +53,8 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
     * <img src="resources/win-g6.xlarge-spot-price-ohio.jpg" width="70%">
     * g6e.xlarge specs: 4 vCPU - 32GB ram - L40S - 48GB vram - $0.37/h - ~30 t/s Qwen 3.6 27B (Used in the demo)
     * <img src="resources/win-g6e.xlarge-spot-price-ohio.jpg" width="70%">
+
+---
 
 * Start attack
 * Linux (Debian / Ubuntu)
@@ -68,12 +70,14 @@ Use an uncensored LLM (Qwen) + Harness (Pi agent) to perform a fully automated s
     * run pi agent with disabled linux tools in attack-files folder: `cd attack-files && pi --no-builtin-tools`
     * Type this [prompt](attack/goal-prompt.txt) to pi agent
 
-### 2. Victim vm (Linux only)
+## 2. Victim vm (Linux only)
 * curl -OL url-repo-/nginx.zip
 * unzip nginx.zip
 * Host the index.html using python in nginx folder `cd nginx && sudo python3 -m http.server 80`
     * Create non-root user `ec2-user`: `sudo useradd -m -s /bin/bash ec2-user`
     * Run `sudo passwd ec2-user` and enter any password form `attack/attack-files/password_wordlist.txt` e.g. `7mDm1XLWXkkPVxYgPe`
+
+---
 
 * You maybe need to tweak ssh security to ensure the Hydra brute-force attack works
 ```bash
@@ -89,10 +93,15 @@ sudo sed -i 's/^#\?LogLevel.*/LogLevel QUIET/' /etc/ssh/sshd_config
 
 sudo systemctl restart ssh
 ```
+
+---
+
 * Use old linux kernel from 1/2017-5/2026 to ensure the [dirtyfrag exploit](https://github.com/v4bel/dirtyfrag) works
     * e.g. Ubuntu Pro by AWS (Used in the demo)
     * <img src="resources/old-linux-kernel-ubuntu.jpg" width="70%">
-  
+
+---
+
 * EC2 e.g. c7a.medium, c6a.large us-east-1 (N. Virginia)
 * Linux spot price
     * c7a.medium specs: 1 vCPU - 2GB ram - ~$0.01/h
