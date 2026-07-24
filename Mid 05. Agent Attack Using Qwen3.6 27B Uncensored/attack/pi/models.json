@@ -1,0 +1,16 @@
+# "C:\Users\Administrator\.pi\agent\models.json"
+{
+  "providers": {
+    "lmstudio": {
+      "baseUrl": "http://localhost:1234/v1",
+      "api": "openai-completions",
+      "apiKey": "lm-studio",
+      "models": [
+        {
+          "id": "qwen3.6-27b-uncensored-hauhaucs-aggressive",
+          "name": "qwen3.6-27b-uncensored-hauhaucs-aggressive"
+        }
+      ]
+    }
+  }
+}

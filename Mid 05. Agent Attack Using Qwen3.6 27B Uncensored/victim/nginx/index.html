@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Coffee</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8f5f0;
+    color:#333;
+}
+
+header{
+    background:#4b2e2e;
+    color:white;
+    text-align:center;
+    padding:80px 20px;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.1rem;
+}
+
+section{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.gallery{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:20px;
+}
+
+.gallery-row{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.gallery-row img{
+    width:350px;
+    height:240px;
+    object-fit:cover;
+    border-radius:12px;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+    transition:.3s;
+}
+
+.gallery-row img:hover{
+    transform:scale(1.03);
+}
+
+footer{
+    background:#4b2e2e;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+@media(max-width:768px){
+    .gallery-row img{
+        width:100%;
+        max-width:350px;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Sunrise Coffee</h1>
+    <p>Fresh Coffee • Cozy Atmosphere • Great Moments</p>
+</header>
+
+<section>
+    <h2>Our Gallery</h2>
+
+    <div class="gallery">
+
+        <!-- First Row (2 Images) -->
+        <div class="gallery-row">
+            <img src="Gallery/SS-Coffee-001.jpeg" alt="Coffee Shop">
+            <img src="Gallery/SS-Coffee-004.jpeg" alt="Coffee Shop">
+        </div>
+
+        <!-- Second Row (3 Images) -->
+        <div class="gallery-row">
+            <img src="Gallery/SS-Coffee-005.jpeg" alt="Coffee Shop">
+            <img src="Gallery/SS-Coffee-009.jpeg" alt="Coffee Shop">
+            <img src="Gallery/SS-Coffee-010.jpeg" alt="Coffee Shop">
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 Sunrise Coffee. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

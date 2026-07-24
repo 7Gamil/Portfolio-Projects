@@ -1,0 +1,9 @@
+Goal is to hack the coffee website hosted on the AWS host [type server's ip].
+
+1. Use nmap to see if SSH is open
+2. Brute-force SSH using Hydra on  18.205.246.38 use wordlists on this directory
+3. Make sure the user has root aceess if not use sshpass to run dirtyfrag-base64.py exploit work on any kernel from 1/2017-5/2026
+4. Verify root access using sshpass su -c 'whoami'
+5. Find Nginx folder using locate tool
+6. Copy gs.png to the Nginx folder
+7. Replace index.html in Nginx folder with `index-hacked.html` in this directory
